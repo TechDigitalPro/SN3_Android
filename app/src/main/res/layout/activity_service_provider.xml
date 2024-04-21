@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/robotoslab_regular"
+                android:text="@string/service_provider"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_20" />
+            <ImageView
+                android:id="@+id/imgViewBack"
+                android:layout_width="@dimen/margin_30"
+                android:layout_height="@dimen/margin_30"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/padding_3"
+                android:layout_marginStart="@dimen/margin_5"
+                android:src="@drawable/back_icon_auto_mirrored" />
+
+            <support.ImageBadgeView
+                android:id="@+id/imgCheckOut"
+                android:layout_width="@dimen/margin_35"
+                android:layout_height="@dimen/margin_35"
+                android:layout_marginTop="@dimen/margin_10"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="@dimen/margin_12"
+                app:ibv_badgeValue="3"
+                app:ibv_badgeTextSize="12sp"
+                app:ibv_fixedBadgeRadius="8dp"
+                app:ibv_badgeTextStyle="bold"
+                app:ibv_badgeTextColor="@color/colorPrimary"
+                app:ibv_badgePosition="top_right"
+                app:ibv_badgeColor="@color/white_color"
+                app:ibv_badgeLimitValue="false"
+                android:src="@mipmap/ic_basket_empty" />
+        </RelativeLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/grey_lighter"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/margin_150"
+            >
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_buy_basket"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_8"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_4"
+
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/margin_3"
+                                android:fontFamily="@font/robotoslab_regular"
+                                android:text="@string/your_cart_is_empty"
+                                android:gravity="center"
+                                android:textColor="@color/dark_text_color"
+                                android:textSize="@dimen/text_25" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+
+                    android:layout_width="@dimen/margin_200"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="@dimen/margin_20"
+                    android:background="@drawable/rounded_background"
+                    android:elevation="@dimen/margin_3"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:text="@string/explore_our_deals"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white_color"
+                    android:textSize="@dimen/text_16" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <com.smarteist.autoimageslider.SliderView
+                    android:id="@+id/imageSlider"
+                    android:padding="@dimen/padding_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:sliderAnimationDuration="600"
+                    app:sliderAutoCycleDirection="back_and_forth"
+                    app:sliderAutoCycleEnabled="true"
+                    app:sliderIndicatorAnimationDuration="600"
+                    app:sliderIndicatorGravity="center_horizontal|bottom"
+                    app:sliderIndicatorMargin="15dp"
+                    app:sliderIndicatorOrientation="horizontal"
+                    app:sliderIndicatorPadding="3dp"
+                    app:sliderIndicatorRadius="1dp"
+                    app:sliderIndicatorSelectedColor="@color/grey_white"
+                    app:sliderIndicatorUnselectedColor="#FFF"
+                    app:sliderScrollTimeInSec="1"
+                    app:sliderStartAutoCycle="true" />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_45"
+                    android:background="@color/grey_lighter"
+                    android:elevation="@dimen/margin_3"
+                    android:paddingStart="@dimen/padding_8"
+                    android:paddingEnd="@dimen/padding_8"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:text="Stalwart H1"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_14" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:text="$224.00"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_13" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_45"
+                    android:background="@color/white_color"
+                    android:elevation="@dimen/margin_1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingStart="@dimen/padding_8"
+                        android:paddingEnd="@dimen/padding_8"
+                        android:orientation="horizontal"
+                        >
+                        <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                            android:id="@+id/rating_bar"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="wrap_content"
+                            app:srb_starSize="16dp"
+                            app:srb_numberOfStars="5"
+                            app:srb_rating="4.5"
+                            app:srb_stepSize="0.5"
+                            app:srb_borderColor="@color/transparent_color"
+                            app:srb_starBackgroundColor="#bababa"
+                            card_view:srb_starBorderWidth="0.01"
+                            app:srb_fillColor="@color/black_color"
+                            />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/robotoslab_regular"
+                            android:gravity="center"
+                            android:paddingStart="@dimen/padding_5"
+                            android:paddingEnd="@dimen/padding_5"
+                            android:text="(1,569)"
+                            android:textColor="@color/dark_light"
+                            android:textSize="@dimen/text_10" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/margin_40"
+                        android:layout_height="@dimen/margin_40"
+                        android:layout_centerInParent="true"
+                        android:src="@mipmap/ic_favorite_black"
+                        />
+                    <ImageView
+                        android:layout_width="@dimen/margin_45"
+                        android:layout_height="@dimen/margin_45"
+                        android:layout_alignParentEnd="true"
+                        android:paddingEnd="@dimen/padding_8"
+                        android:paddingStart="@dimen/padding_3"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/ic_add_product"
+                        />
+                </RelativeLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/white_color"
+                    android:paddingStart="@dimen/padding_8"
+                    android:paddingEnd="@dimen/padding_8"
+                    android:layout_marginTop="@dimen/margin_15"
+                    >
+                    <TextView
+                        android:layout_marginTop="@dimen/margin_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:text="@string/color"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_12" />
+                    <LinearLayout
+                        android:paddingStart="@dimen/padding_25"
+                        android:paddingEnd="@dimen/margin_25"
+                        android:paddingTop="@dimen/padding_3"
+                        android:paddingBottom="@dimen/padding_3"
+                        android:background="@color/grey_lighter"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_width="wrap_content"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content">
+                        <RadioGroup
+                            android:id="@+id/radio_group"
+                            android:layout_width="@dimen/margin_250"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <RadioButton
+                                android:id="@+id/radio1"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="wrap_content"
+                                android:buttonTint="@color/colorPrimary"
+                                android:checked="true" />
+                            <RadioButton
+                                android:id="@+id/radio2"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/red_dark"
+                                android:layout_height="wrap_content" />
+                            <RadioButton
+                                android:id="@+id/radio3"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/black_color"
+                                android:layout_height="wrap_content" />
+                            <RadioButton
+                                android:id="@+id/radio4"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/green_dark"
+                                android:layout_height="wrap_content" />
+                            <RadioButton
+                                android:id="@+id/radio5"
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:buttonTint="@color/purple_light"
+                                android:layout_height="wrap_content" />
+                        </RadioGroup>
+                    </LinearLayout>
+                    <TextView
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:text="@string/size"
+                        android:textColor="@color/black_color"
+                        android:textSize="@dimen/text_12" />
+                    <LinearLayout
+                        android:layout_marginTop="@dimen/margin_5"
+
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:paddingStart="@dimen/padding_25"
+                        android:paddingEnd="@dimen/margin_25"
+                        android:paddingTop="@dimen/padding_8"
+                        android:paddingBottom="@dimen/padding_8"
+                        android:background="@color/grey_lighter"
+                        android:layout_height="@dimen/margin_50">
+                        <com.google.android.material.tabs.TabLayout
+                            android:layout_width="@dimen/margin_250"
+                            android:layout_gravity="center"
+                            android:layout_height="@dimen/margin_30"
+                            app:tabIndicator="@drawable/rounded_tab_background"
+                            app:tabIndicatorGravity="stretch"
+                            app:tabIndicatorColor="@color/colorPrimary"
+                            app:tabTextColor="@color/dark_text_color"
+                            app:tabSelectedTextColor="@color/white_color"
+                            app:tabRippleColor="@android:color/transparent"
+                            app:tabTextAppearance="@style/TabTextStyle"
+                            >
+                            <com.google.android.material.tabs.TabItem
+                                android:text="@string/small"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                            <com.google.android.material.tabs.TabItem
+                                android:text="@string/medium"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <com.google.android.material.tabs.TabItem
+                                android:text="@string/big"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+
+                        </com.google.android.material.tabs.TabLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_3"
+                        android:gravity="center"
+                        android:layout_marginTop="@dimen/margin_20"
+                        android:background="@drawable/rounded_border_grey"
+                        android:layout_gravity="center"
+                        >
+                        <EditText
+                            android:layout_width="@dimen/margin_150"
+                            android:layout_height="wrap_content"
+                            android:minHeight="@dimen/margin_35"
+                            android:hint="@string/promo_code"
+                            android:background="@color/white_color"
+                            android:theme="@style/EditTextStyle" />
+
+                        <TextView
+
+                            android:layout_width="@dimen/margin_80"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="@dimen/margin_10"
+                            android:background="@drawable/rounded_background"
+                            android:elevation="@dimen/margin_1"
+                            android:fontFamily="@font/robotoslab_regular"
+                            android:gravity="center"
+                            android:text="@string/apply"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white_color"
+                            android:textSize="@dimen/text_14" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="@dimen/margin_200"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:layout_marginTop="@dimen/margin_15"
+                        android:layout_marginBottom="@dimen/margin_25"
+                        >
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4"
+
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/margin_3"
+                                        android:fontFamily="@font/robotoslab_regular"
+                                        android:text="@string/promo_off"
+                                        android:textColor="@color/dark_text_color"
+                                        android:textSize="@dimen/text_11" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/robotoslab_bold"
+                                        android:layout_marginEnd="@dimen/margin_12"
+                                        android:gravity="end"
+                                        android:text="$1730"
+                                        android:textColor="@color/dark_text_color"
+                                        android:textSize="@dimen/text_11" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4"
+
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/margin_3"
+                                        android:fontFamily="@font/robotoslab_regular"
+                                        android:text="@string/shipping"
+                                        android:textColor="@color/dark_text_color"
+                                        android:textSize="@dimen/text_11" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/robotoslab_bold"
+                                        android:layout_marginEnd="@dimen/margin_12"
+                                        android:gravity="end"
+                                        android:text="$1730"
+                                        android:textColor="@color/dark_text_color"
+                                        android:textSize="@dimen/text_11" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_4"
+
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginStart="@dimen/margin_3"
+                                        android:fontFamily="@font/robotoslab_regular"
+                                        android:text="@string/sub"
+                                        android:textColor="@color/dark_text_color"
+                                        android:textSize="@dimen/text_11" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/robotoslab_bold"
+                                        android:layout_marginEnd="@dimen/margin_12"
+                                        android:gravity="end"
+                                        android:text="$1730"
+                                        android:textColor="@color/dark_text_color"
+                                        android:textSize="@dimen/text_11" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginTop="@dimen/margin_8"
+                            android:background="@drawable/rounded_border"
+                            android:elevation="@dimen/margin_3"
+                            android:fontFamily="@font/robotoslab_regular"
+                            android:gravity="center"
+                            android:text="@string/add_to_card"
+                            android:textAllCaps="false"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_16" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/margin_15"
+                    android:paddingTop="@dimen/padding_8"
+                    android:paddingStart="@dimen/padding_8"
+                    android:paddingEnd="@dimen/padding_8"
+                    android:orientation="vertical"
+                    android:background="@color/white_color"
+                    >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/robotoslab_bold"
+                            android:text="@string/description"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_13" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/robotoslab_regular"
+                            android:text="@string/see_all"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_13" />
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:layout_marginTop="@dimen/margin_15"
+                        android:text="The chrome finish of this kitchen faucet is highly reflective.The chrome finish of this kitchen faucet is highly reflective."
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/dark_text_color"
+                        android:textSize="@dimen/text_12" />
+                    <RelativeLayout
+                        android:layout_marginTop="@dimen/margin_35"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/robotoslab_bold"
+                            android:text="@string/specifications"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_13" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:fontFamily="@font/robotoslab_regular"
+                            android:text="@string/see_all"
+                            android:layout_alignParentEnd="true"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/text_13" />
+                    </RelativeLayout>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:layout_marginTop="@dimen/margin_15"
+                        android:layout_marginBottom="@dimen/margin_30"
+                        android:text="The chrome finish of this kitchen faucet is highly reflective.The chrome finish of this kitchen faucet is highly reflective."
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/dark_text_color"
+                        android:textSize="@dimen/text_12" />
+                </LinearLayout>
+                <RelativeLayout
+                    android:padding="@dimen/padding_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_marginBottom="@dimen/margin_5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/robotoslab_bold"
+                        android:text="@string/review"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_13" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/robotoslab_regular"
+                        android:text="@string/see_all"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/text_13" />
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/review_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

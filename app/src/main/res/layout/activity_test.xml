@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_40"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/robotoslab_regular"
+                android:text="TEST 23 UI"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_20" />
+
+
+        </RelativeLayout>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/btn1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="CartScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="CashScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="ComplainScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="ContactDetailScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="CreditDebitScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn6"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="DescriptionScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn7"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="FeedbackScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn8"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="LocationScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn9"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="LoginScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn10"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="MainScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn11"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="OrderServiceProgressScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn12"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="OrderStatusScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn13"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="PaymentDetailScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn14"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="ProductScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn15"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="ReviewScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn16"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="ServiceScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn17"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="ServiceProviderScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn18"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="StaticsScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn19"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="RegsiterScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn20"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="IntroScreen"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn21"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="Tickets"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn22"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="TicketsContent"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+                <TextView
+                    android:id="@+id/btn23"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_40"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:gravity="center"
+                    android:text="ServiceCardOption"
+                    android:textColor="@color/black_color"
+                    android:textSize="@dimen/text_20" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

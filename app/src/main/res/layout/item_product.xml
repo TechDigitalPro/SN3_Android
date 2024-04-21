@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/margin_130"
+    android:paddingStart="-6dp"
+    android:paddingEnd="-3dp"
+    android:layout_height="@dimen/margin_100">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="@dimen/margin_5"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="@dimen/padding_15"
+                android:scaleType="centerCrop"
+                android:src="@drawable/test_3"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_20"
+                android:fontFamily="@font/robotoslab_regular"
+                android:gravity="center"
+                android:background="@color/colorPrimary"
+                android:text="Wrench"
+                android:textColor="@color/white_color"
+                android:textSize="@dimen/text_10" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

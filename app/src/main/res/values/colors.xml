@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#43ACD9</color>
+    <color name="colorPrimaryDark">#43ACD9</color>
+    <color name="colorAccent">#43ACD9</color>
+    <color name="colorLightBlue">#800F9FDC</color>
+    <color name="colorStepViewLine">#900F9FDC</color>
+
+    <color name="colorGreen">#0d8c60</color>
+    <color name="colorLightGreen">#10c892</color>
+    <color name="colorLighterGreen">#d3f3e9</color>
+    <color name="colorRed">#e70a0a</color>
+    <color name="colorGray">#b2b2b2</color>
+    <color name="colorGrayProgress">#8E1B1B1B</color>
+    <color name="colorDarkGray">#202020</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrayWhite">#f4f4f4</color>
+
+
+    <color name="transparent_color">#00FFFFFF</color>
+    <color name="orange_black">#F15A29</color>
+    <color name="orange_light">#F58421</color>
+    <color name="black_color">#000000</color>
+    <color name="dark_light">#858585</color>
+
+    <color name="white_color">#FFFFFFFF</color>
+    <color name="white_circle_color">#DDFFFFFF</color>
+    <color name="purple_dark">#7A0CF8</color>
+    <color name="purple_light">#9E4FF8</color>
+    <color name="pink_dark">#F80CF4</color>
+    <color name="pink_light">#F84FF5</color>
+    <color name="blue_dark">#0C33F8</color>
+    <color name="blue_white">#0CA5F8</color>
+    <color name="blue_light">#4865F8</color>
+    <color name="blue_main">#1E88E5</color>
+    <color name="green_light">#58FA52</color>
+    <color name="yellow_dark">#F8E00C</color>
+    <color name="yellow_light">#F6E653</color>
+    <color name="yellow_star">#ffcb01</color>
+
+    <color name="red_dark">#F80C0C</color>
+    <color name="red_light">#FA5151</color>
+    <color name="red_button">#FA2156</color>
+    <color name="grey_lighter">#f5f5f5</color>
+    <color name="grey_dark">#4D4E53</color>
+    <color name="grey_light">#888787</color>
+    <color name="grey_image">#99B8B6B6</color>
+    <color name="grey_button">#C5C3C3</color>
+    <color name="grey_white">#E0E0E0</color>
+    <color name="grey_dialog">#A8ECE8E8</color>
+    <color name="grey_camera">#801B1A1A</color>
+    <color name="green_dark">#1DA06A</color>
+
+
+    <color name="dark_text_color">#474747</color>
+    <color name="light_text_color">#8d8d8d</color>
+
+    <color name="uncompleted_color">#A3E0D9</color>
+    <color name="uncompleted_text_color">#F8F8F8</color>
+</resources>

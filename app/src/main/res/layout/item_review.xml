@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="@dimen/margin_3"
+        app:cardUseCompatPadding="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white_color"
+            android:layout_marginStart="@dimen/margin_12"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_10"
+                >
+                <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                    android:id="@+id/rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:srb_starSize="16dp"
+                    app:srb_numberOfStars="5"
+                    app:srb_rating="4.5"
+                    app:srb_stepSize="0.5"
+                    app:srb_borderColor="@color/transparent_color"
+                    app:srb_starBackgroundColor="#bababa"
+                    card_view:srb_starBorderWidth="0.01"
+                    app:srb_fillColor="@color/black_color"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:text="12:30 AM 21/09/2020"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="@dimen/margin_12"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="@dimen/text_11" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/margin_5"
+                android:layout_marginBottom="@dimen/margin_15"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:text="Amazing Faucet"
+                    android:layout_marginTop="@dimen/margin_4"
+                    android:textColor="@color/dark_text_color"
+                    android:textSize="@dimen/text_14" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/robotoslab_regular"
+                    android:text="The chrome finish of this kitchen faucet is highly reflective.The chrome finish of this kitchen faucet is highly reflective."
+                    android:layout_marginEnd="@dimen/margin_12"
+                    android:textColor="@color/light_text_color"
+                    android:textSize="@dimen/text_12" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

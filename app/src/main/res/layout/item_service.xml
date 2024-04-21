@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/margin_130"
+    android:paddingStart="-6dp"
+    android:paddingEnd="-6dp"
+    android:layout_height="@dimen/margin_100">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="@dimen/margin_5"
+        app:cardUseCompatPadding="true">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test_2"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:alpha="0.2"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/robotoslab_bold"
+            android:gravity="center"
+            android:text="Clean House"
+            android:textColor="@color/white_color"
+            android:textSize="@dimen/text_12" />
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
